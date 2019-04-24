@@ -12,10 +12,10 @@
 
     <title>The big conference</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="54">
 
 <!-- HEADER -->
-<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="lmg.png" alt="logo LMG">
@@ -25,23 +25,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
             <!-- mr = margin right, con ml el submenu se va a la derecha -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">La conferencia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">La conferencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Los oradores</a>
+                    <a class="nav-link" href="#sedes">Las sedes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">La fecha y el lugar</a>
+                    <a class="nav-link" href="#place-time">La fecha y el lugar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conviertete en orador</a>
+                    <a class="nav-link" href="#newSpeaker">Conviertete en Guide Master</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-lmg" href="#">Compra tu boleto</a>
+                    <a class="nav-link text-lmg" href="#" data-toggle="modal" data-target="#modalBoletos" >Compra tu boleto</a>
                 </li>          
             <!-- comentando el menú dropdown -->
                 <!-- <li class="nav-item dropdown">
@@ -71,7 +71,7 @@
 <!-- /HEADER -->
 
 <!-- *** MAIN *** -->
-<section class="main">
+<section id="main">
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -104,7 +104,7 @@
                             será de gran aportación a tu vida diaria.
                         </p>
                         <a href="#" class="btn btn-outline-light">Quiero participar</a>
-                        <button type="button" class="btn btn-lmg">Comprar boletos</button>
+                        <button type="button" class="btn btn-lmg" data-toggle="modal" data-target="#modalBoletos" >Comprar boletos</button>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center text-uppercase">
-                <small>Conoce las</small>
+                <small id="sedes">Conoce las</small>
                 <h2>sedes</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
@@ -179,7 +179,7 @@
             </div>
             <div class="col-12 col-lg-6 pt-2 pt-4 pb-4">     
                 <h2 class="mt-2">Mountain-Lake March 2020</h2>
-                <p>En esta sede iniciaras un proceso de introspección 
+                <p id="time">En esta sede iniciaras un proceso de introspección 
                     que no tiene igual. Se inicia una nueva estpa en 
                     la vida al tiempo que descubres algo que no te imaginas.
                     Simplemente te preguntaras a ti mismo ¿por qué no lo hice antes?
@@ -263,6 +263,45 @@
         </div>
     </footer>
 <!-- /FOOTER -->
+
+<!-- MODAL compra de boletos-->
+<div class="modal fade" id="modalBoletos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Compra de boletos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="form-group-col">
+                    <!--Agregando usuario a los tickets  -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                <!-- Agregando alerta de compra -->
+                    <div class="alert alert-warning" role="alert">
+                        Recibiras un correo si resultas ganador
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-lmg">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /MODAL -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
