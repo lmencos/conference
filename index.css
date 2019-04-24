@@ -52,13 +52,51 @@
 {
     background-color: #FDFFEE;
 }
-/** /SPEAKERS **/
+/** /SPEAKERS **/ 
+
+/* **PLACE & TIME ***/
+#place-time
+{
+    max-width: 100%; 
+}
+#place-time
+{
+    background-color: #343a40;
+    color: white;
+}
+
+
+@media screen and (max-width: 576px)
+{
+    .columna img
+    {
+        max-width: 576px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .columna img
+    {
+        max-width: 480px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .columna img
+    {
+        max-width: 320px;
+    }
+}
+
+/* ** /PLACE & TIME ***/
 
 /*** FOOTER ***/
 #footer
 {
     background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
-    height: 18vh;
+    /* height: 21vh; */
 }
 
 #footer a
