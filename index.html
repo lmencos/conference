@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
     <title>The big conference</title>
   </head>
@@ -143,7 +126,7 @@
                             <img src="montana.JPG" class="card-img-top" alt="montaña">
                             <div class="card-body">
                                 <div class="badges mb-2">
-                                    <span class="badge badge-warning">LivingFull</span>
+                                    <span class="badge badge-warning"><abbr data-toggle="tooltip" title="Consideras que vives plenamente?">livingfull</abbr></span>
                                     <span class="badge badge-info">???</span>
                                 </div>
                                 <h5 class="card-title">Mountain Lake</h5>
@@ -208,6 +191,55 @@
 </section>
 <!-- /PLACE & TIME -->
 
+<!--*** NEWSPEAKER ***-->
+<section id="newSpeaker" class="pt-3 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col text-uppercase text-center">
+                <small>¿Te gustaria ser un</small>
+                <h2>Guide Master?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                Anótate como <abbr data-toggle="tooltip" title="Alguien que con un gran compromiso guia a otros">guide master</abbr>.
+                Cuéntanos cómo quieres coolaborar.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <textarea name="text" class="form-control form-control-lg" placeholder="¿Sobre qué quieres coolaborar con nosotros?"></textarea>
+                            <small class="form-text text-muted">
+                                Recuerda incluir un título para tu colaboración
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <button type="button" class="btn btn-lmg btn-block">Enviar</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- *** /NEWSPEAKER *** -->
+
 <!-- FOOTER -->
       <!-- padding dentro del footer pb=padding botton-->
     <footer id="footer" class="pb-4 pt-4">
@@ -236,5 +268,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
